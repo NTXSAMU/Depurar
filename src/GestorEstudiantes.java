@@ -10,7 +10,9 @@ public class GestorEstudiantes {
         for (int i = 0; i < estudiante.getNotas().length; i++) { // Error: índice fuera de rango  // Solo era necesario quitar el igual del bucle haciendo que se salga de rango.
             suma += estudiante.getNotas()[i];
         }
-        return suma / estudiante.getNotas().length; // Error si el array está vacío
+        if (estudiante.getNotas() != null){
+            return suma / 3 ;    // Simplemente hemos añadido una condicion que hace que los estudiantes con notas se les divida siempre entre 3 "Numero total de pruebas" y los estudiantes sin pruebas sin realizar tendran un 0.
+        } else return 0;
     }
 
     // Encuentra al estudiante con la mejor nota media
