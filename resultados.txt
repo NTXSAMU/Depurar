@@ -1,0 +1,4 @@
+Nombre: Ana, Nota Media: 8.333333333333334
+Nombre: Luis, Nota Media: 3.8333333333333335
+Nombre: Marta, Nota Media: 6.5
+Nombre: Carlos, Nota Media: 0.0
