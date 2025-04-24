@@ -21,6 +21,9 @@ public class GestorEstudiantes {
         double mejorNota = -1;
 
         for (Estudiante estudiante : estudiantes) {
+            if (estudiante.getNotas() == null){   // Si el estudiante no tiene notas que devuelva NULL (Evita el error)
+                return null;
+            }
             double media = calcularNotaMedia(estudiante); // Posible fallo aquí
             if (media > mejorNota) {
                 mejorNota = media;
